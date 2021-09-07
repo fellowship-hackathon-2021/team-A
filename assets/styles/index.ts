@@ -6,6 +6,7 @@ export const WHITE = "#FFFFFF";
 export const GRAY = "#757E90";
 export const DARK_GRAY = "#363636";
 export const BLACK = "#000000";
+export const BLUE = "#0645AD";
 
 export const ONLINE_STATUS = "#46A575";
 export const OFFLINE_STATUS = "#D04949";
@@ -21,7 +22,9 @@ export const DIMENSION_HEIGHT = Dimensions.get("window").height;
 export default StyleSheet.create({
   // COMPONENT - CARD ITEM
   containerCardItem: {
-    backgroundColor: WHITE,
+    borderWidth: 1,
+    borderColor: "gold",
+    backgroundColor: "#000000",
     borderRadius: 8,
     alignItems: "center",
     margin: 10,
@@ -177,9 +180,9 @@ export default StyleSheet.create({
   matchesProfileItem: {
     width: 135,
     marginTop: -15,
-    backgroundColor: PRIMARY_COLOR,
-    paddingVertical: 7,
-    paddingHorizontal: 20,
+    backgroundColor: BLACK,
+    paddingVertical: 10,
+    paddingHorizontal: 10,
     borderRadius: 20,
     alignSelf: "center",
   },
@@ -214,7 +217,10 @@ export default StyleSheet.create({
     color: GRAY,
     fontSize: 13,
   },
-
+  infoLink: {
+    color: BLUE,
+    fontSize: 13,
+  },
   // CONTAINER - GENERAL
   bg: {
     flex: 1,
@@ -229,7 +235,7 @@ export default StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
   },
-  title: { paddingBottom: 10, fontSize: 22, color: DARK_GRAY },
+  title: { paddingBottom: 10, fontSize: 22, color: 'gold' },
 
   // CONTAINER - HOME
   containerHome: {
@@ -288,7 +294,7 @@ export default StyleSheet.create({
     marginLeft: 10,
     height: 50,
     borderRadius: 25,
-    backgroundColor: SECONDARY_COLOR,
+    backgroundColor: BLACK,
     paddingHorizontal: 20,
   },
 
@@ -299,4 +305,46 @@ export default StyleSheet.create({
   iconMenu: {
     alignItems: "center",
   },
+
+centeredView: {
+  flex: 1,
+  justifyContent: "center",
+  alignItems: "center",
+  marginTop: 22
+},
+modalView: {
+  margin: 20,
+  backgroundColor: "white",
+  borderRadius: 20,
+  padding: 35,
+  alignItems: "center",
+  shadowColor: "#000",
+  shadowOffset: {
+    width: 0,
+    height: 2
+  },
+  shadowOpacity: 0.25,
+  shadowRadius: 4,
+  elevation: 5
+},
+modalButton: {
+  borderRadius: 20,
+  padding: 10,
+  elevation: 2
+},
+buttonOpen: {
+  backgroundColor: "#F194FF",
+},
+buttonClose: {
+  backgroundColor: "#2196F3",
+},
+textStyle: {
+  color: "white",
+  fontWeight: "bold",
+  textAlign: "center"
+},
+modalText: {
+  marginBottom: 15,
+  textAlign: "center"
+}
 });

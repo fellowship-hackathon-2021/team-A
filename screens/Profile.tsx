@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ScrollView,
   View,
@@ -9,19 +9,35 @@ import {
 import { Icon, ProfileItem } from "../components";
 import DEMO from "../assets/data/demo";
 import styles, { WHITE } from "../assets/styles";
+import NABIL from "../assets/images/nabil.jpg";
+import { UserLogOut } from "../services/UserLogOut";
+import Parse from "parse/react-native";
 
 const Profile = () => {
-  const {
-    age,
-    image,
-    info1,
-    info2,
-    info3,
-    info4,
-    location,
-    match,
-    name,
-  } = DEMO[7];
+  const [username, setUsername] = useState("");
+  const [userType, setUserType] = useState("");
+  const [school, setSchool] = useState("");
+  const [email, setEmail] = useState("");
+  const [linkedin, setLinkedin] = useState("");
+  const [github, setGithub] = useState("");
+  const [skills, setSkills] = useState("");
+  const [age, setAge] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+
+  const userInfo = (() => {
+    Parse.User.currentAsync().then((response) => {
+      setUserType(response.attributes.userType);
+      setUsername(response.attributes.username);
+      setSchool(response.attributes.school);
+      setEmail(response.attributes.email);
+      setLinkedin(response.attributes.linkedin);
+      setGithub(response.attributes.github);
+      setSkills(response.attributes.skills);
+      setAge(response.attributes.age);
+      const stringJson = JSON.stringify(response.attributes.profile_image);
+      setImageUrl(JSON.parse(stringJson).url);
+    });
+  })();
 
   return (
     <ImageBackground
@@ -29,9 +45,14 @@ const Profile = () => {
       style={styles.bg}
     >
       <ScrollView style={styles.containerProfile}>
-        <ImageBackground source={image} style={styles.photo}>
+        <ImageBackground
+          source={{
+            uri: imageUrl ? imageUrl : "a",
+          }}
+          style={styles.photo}
+        >
           <View style={styles.top}>
-            <TouchableOpacity>
+            {/* <TouchableOpacity>
               <Icon
                 name="chevron-back"
                 size={20}
@@ -47,30 +68,30 @@ const Profile = () => {
                 color={WHITE}
                 style={styles.topIconRight}
               />
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </ImageBackground>
 
         <ProfileItem
-          matches={match}
-          name={name}
+          name={username}
           age={age}
-          location={location}
-          info1={info1}
-          info2={info2}
-          info3={info3}
-          info4={info4}
+          type={userType}
+          location={"New York"}
+          college={school}
+          skills={skills}
+          phone={""}
+          email={email}
+          linkedin={linkedin}
+          github={github}
+          matches={""}
         />
 
         <View style={styles.actionsProfile}>
-          <TouchableOpacity style={styles.circledButton}>
+          {/* <TouchableOpacity style={styles.circledButton}>
             <Icon name="ellipsis-horizontal" size={20} color={WHITE} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
 
-          <TouchableOpacity style={styles.roundedButton}>
-            <Icon name="chatbubble" size={20} color={WHITE} />
-            <Text style={styles.textButton}>Start chatting</Text>
-          </TouchableOpacity>
+          <UserLogOut />
         </View>
       </ScrollView>
     </ImageBackground>

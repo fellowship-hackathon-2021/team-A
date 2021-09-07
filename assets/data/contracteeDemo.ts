@@ -1,5 +1,5 @@
 import { DataT } from "../../types";
-import IMAGE_01 from "../images/nabil.jpg";
+import IMAGE_01 from "../images/drew.jpg";
 import IMAGE_02 from "../images/12.jpg";
 import IMAGE_03 from "../images/13.jpg";
 import IMAGE_04 from "../images/14.jpg";
@@ -13,56 +13,56 @@ import IMAGE_10 from "../images/20.jpg";
 const data: DataT[] = [
   {
     id: 1,
-    name: "Nabil Fayak",
+    name: "Drew",
     isOnline: true,
-    match: "18",
+    match: "20",
     description:
-      "Aspiring Software Engineer | Experience in Full-Stack, Mobile Development, and Cloud Infrastructure",
+      "Software Engineer @ Headstarter. Experience in React and Swift",
     message:
       "I love to code!",
     image: IMAGE_01,
   },
-  {
-    id: 2,
-    name: "Mark Zuckerberg",
-    match: "93",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: false,
-    message: "Someone like you. Someone who'll rattle the cages.",
-    image: IMAGE_02,
-  },
-  {
-    id: 3,
-    name: "Jabrils",
-    match: "45",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: false,
-    message:
-      "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
-    image: IMAGE_03,
-  },
-  {
-    id: 4,
-    name: "Linus Sebastian",
-    match: "88",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: true,
-    message: "Bats frighten me. It's time my enemies shared my dread.",
-    image: IMAGE_04,
-  },
-  {
-    id: 5,
-    name: "Reshma Saujani",
-    match: "76",
-    description:
-      "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
-    isOnline: false,
-    message: "It's not who I am underneath but what I do that defines me.",
-    image: IMAGE_05,
-  },
+  // {
+  //   id: 2,
+  //   name: "Mark Zuckerberg",
+  //   match: "93",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   isOnline: false,
+  //   message: "Someone like you. Someone who'll rattle the cages.",
+  //   image: IMAGE_02,
+  // },
+  // {
+  //   id: 3,
+  //   name: "Jabrils",
+  //   match: "45",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   isOnline: false,
+  //   message:
+  //     "Oh, hee-hee, aha. Ha, ooh, hee, ha-ha, ha-ha. And I thought my jokes were bad.",
+  //   image: IMAGE_03,
+  // },
+  // {
+  //   id: 4,
+  //   name: "Linus Sebastian",
+  //   match: "88",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   isOnline: true,
+  //   message: "Bats frighten me. It's time my enemies shared my dread.",
+  //   image: IMAGE_04,
+  // },
+  // {
+  //   id: 5,
+  //   name: "Reshma Saujani",
+  //   match: "76",
+  //   description:
+  //     "Full-time Traveller. Globe Trotter. Occasional Photographer. Part time Singer/Dancer.",
+  //   isOnline: false,
+  //   message: "It's not who I am underneath but what I do that defines me.",
+  //   image: IMAGE_05,
+  // },
   // {
   //   id: 6,
   //   name: "Slyvia Acevedo",

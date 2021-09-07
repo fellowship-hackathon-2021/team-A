@@ -23,13 +23,16 @@ export type MessageT = {
 
 export type ProfileItemT = {
   age?: string;
-  info1?: string;
-  info2?: string;
-  info3?: string;
-  info4?: string;
+  college?: string;
+  skills?: string;
+  phone?: string;
+  email?: string;
+  linkedin?: string;
+  github?: string;
   location?: string;
   matches: string;
   name: string;
+  type: string;
 };
 
 export type TabBarIconT = {
@@ -47,9 +50,11 @@ export type DataT = {
   message: string;
   image: any;
   age?: string;
-  info1?: string;
-  info2?: string;
-  info3?: string;
-  info4?: string;
+  college?: string;
+  skills?: string;
+  phone?: string;
+  email?: string;
+  linkedin?: string;
+  github?: string;
   location?: string;
 };

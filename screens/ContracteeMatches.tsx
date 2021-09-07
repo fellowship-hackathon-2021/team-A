@@ -12,16 +12,16 @@ import {
   Linking,
 } from "react-native";
 import { CardItem, Icon, ProfileItem } from "../components";
-import DEMO from "../assets/data/demo";
+import DEMO from "../assets/data/contracteeDemo";
 import styles, {
   BLACK,
   DARK_GRAY,
   SECONDARY_COLOR,
   WHITE,
 } from "../assets/styles";
-import IMAGE_01 from "../assets/images/nabil.jpg";
+import IMAGE_01 from "../assets/images/drew.jpg";
 
-const Matches = () => {
+const ContracteeMatches = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
@@ -76,15 +76,15 @@ const Matches = () => {
 
                       <ProfileItem
                         matches={IMAGE_01}
-                        name={"Nabil Fayak"}
-                        age={"18"}
+                        name={"Drew"}
+                        age={"20"}
                         location={"New York"}
-                        college={"CUNY Baruch College"}
-                        skills={"AWS, Python, React, GCP, Azure, Node.js"}
+                        college={"CUNY Hunter College"}
+                        skills={"AWS, React, Python, Django, Parse"}
                         phone={"555-555-5555"}
-                        email={"nabilfayak@gmail.com"}
-                        linkedin={"https://www.Linkedin.com/in/NabilFayak"}
-                        github={"https://Github.com/NabilFayak"}
+                        email={"alcoves75@gmail.com"}
+                        linkedin={"https://www.Linkedin.com/in/andrewhaelee"}
+                        github={"https://Github.com/andrewhylee"}
                         type={""}
                       />
 
@@ -96,7 +96,7 @@ const Matches = () => {
                         <TouchableOpacity
                           style={styles.roundedButton}
                           onPress={() =>
-                            Linking.openURL("mailto:nabilfayak@gmail.com")
+                            Linking.openURL("mailto:alcoves75@gmail.com")
                           }
                         >
                           <Text style={styles.textButton}>Send Email </Text>
@@ -122,4 +122,4 @@ const Matches = () => {
   );
 };
 
-export default Matches;
+export default ContracteeMatches;
