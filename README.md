@@ -24,4 +24,13 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media0.giphy.com/media/TB65XT3fWbneOF16ap/giphy.gif?cid=790b76119c8708a43a7462c433688077908bf5ebb5846cb9&rid=giphy.gif' width='' alt='Video Walkthrough' />
+## Contributions
+
+Roles:
+Naz: Backend | nazmulk116@yahoo.com
+Haseeb: Frontend | Haseebjaved4652@gmail.com
+Tajwar: Frontend | rahmantajwar131@gmail.com
+Nabil: Backend | fayaknabil@gmail.com
+Drew: Backend | alcoves75@gmail.com
+Abdullah: Frontend |
+
