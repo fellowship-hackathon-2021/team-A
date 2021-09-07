@@ -30,9 +30,15 @@ Here's a walkthrough of implemented user stories:
 
 Roles:
 Nabil Fayak: Backend 
+
 Drew (Hae Yang) Lee: Backend 
+
 Nazmul Kareem: Backend  
+
 Haseeb Javed: Frontend 
-Tajwar Rahmen: Frontend 
+
+Tajwar Rahman: Frontend 
+
 Abdullah Saleh: Frontend 
+
 Manav Patel: Frontend
