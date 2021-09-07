@@ -29,9 +29,10 @@ Here's a walkthrough of implemented user stories:
 ## Contributions
 
 Roles:
-Nabil Fayak: Backend 
 
-Drew (Hae Yang) Lee: Backend 
+Nabil Fayak: Backend / Product Manager
+
+Drew (Hae Yang) Lee: Backend / Product Manager  
 
 Nazmul Kareem: Backend  
 
