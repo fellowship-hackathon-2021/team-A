@@ -34,3 +34,7 @@ Nabil: Backend | fayaknabil@gmail.com
 Drew: Backend | alcoves75@gmail.com
 Abdullah: Frontend |
 
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
