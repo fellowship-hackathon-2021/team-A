@@ -27,13 +27,13 @@ Here's a walkthrough of implemented user stories:
 ## Contributions
 
 Roles:
-Naz: Backend | nazmulk116@yahoo.com
-Haseeb: Frontend | Haseebjaved4652@gmail.com
-Tajwar: Frontend | rahmantajwar131@gmail.com
-Nabil: Backend | fayaknabil@gmail.com
-Drew: Backend | alcoves75@gmail.com
-Abdullah: Frontend |
-
+Nabil Fayak: Backend 
+Drew (Hae Yang) Lee: Backend 
+Nazmul Kareem: Backend  
+Haseeb Javed: Frontend 
+Tajwar Rahmen: Frontend 
+Abdullah Saleh: Frontend 
+Manav Patel: Frontend
 
 ## Video Walkthrough
 
